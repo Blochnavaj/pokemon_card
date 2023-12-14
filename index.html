@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pokemon</title>
+  <!-- link in css -->
+  <link rel="stylesheet" href="style.css">
+   
+</head>
+
+<body>
+  <h1 class="title">Pokemon</h1>
+  <div class="search-parent">
+    <input type="text" name="" id="search_value">
+    <button class="go_button">Go</button>
+  </div>
+  <div class="card_container">
+    <div class="card_parent">
+      <img src="https://www.svgrepo.com/show/14071/search.svg" alt="" id="pokeImg">
+      <div class="search" id="pokeName">Search</div>
+
+
+      <!-- progress bar  -->
+      <div class="class_parent">
+        <span class="abc" style="color: rgb(243, 116, 116);">HP</span>`
+        <div class="index">
+          <div class="index_2" id="pokeHp">0</div>
+        </div>
+      </div>
+
+      <div class="class_parent">
+        <span class="abc" style="color: rgb(93, 180, 242);">akt</span>`
+        <div class="index">
+          <div class="index_2" id="pokeatk">0</div>
+        </div>
+      </div>
+
+      <div class="class_parent">
+        <span class="abc" style="color: rgb(248, 160, 79);">def</span>`
+        <div class="index">
+          <div class="index_2" id="pokeDef">0</div>
+        </div>
+      </div>
+
+      <div class="class_parent">
+        <span class="abc" style="color: rgb(211, 124, 241); ">spd</span>`
+        <div class="index">
+          <div class="index_2"  id="pokeSpd">0</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    <div> Made by</div>
+    <a href="https://instagram.com/bloch_navaz?igshid=OGQ5ZDc2ODk2ZA==" target="_blank" class="name">"Bloch navaj"</a>
+    <div>Using API</div>
+    <a href="" target="_blank"></a>
+  </footer>
+  </div>
+
+
+
+  <!-- js code  -->
+  <script>
+    function fetchData(pokemon) {
+      let pokeNameElement = document.getElementById("pokeName");
+      let pokeImgE = document.getElementById("pokeImg");
+      let pokeHpE = document.getElementById("pokeHp");
+      let pokeatkE = document.getElementById("pokeatk");
+      let pokeDefE = document.getElementById("pokeDef");
+      let pokeSpdE = document.getElementById("pokeSpd");
+      
+       
+
+      // Replace 'https://jsonplaceholder.typicode.com/todos/1' with the URL of the API you want to fetch
+      fetch('https://pokeapi.co/api/v2/pokemon/' + pokemon)
+        .then(data => {
+          if (!data.ok) {
+            throw new Error(`HTTP error! Status: ${data.status}`);
+          }
+          return data.json();
+        })
+        .then(data => {
+          // Handle the fetched data
+          //console.log('Data:', data);
+          pokeNameElement.innerText = data.name;
+          pokeImgE.src = data.sprites.other["official-artwork"].front_default;
+          pokeHpE.innerText = data.stats[0].base_stat;
+          pokeatkE.innerText = data.stats[0].base_stat;
+          pokeDefE.innerText = data.stats[0].base_stat;
+          pokeSpdE.innerText = data.stats[0].base_stat;
+          
+        })
+        .catch(error => {
+          // Handle errors
+          console.error('Error:', error);
+        });
+    }
+    fetchData("charmander");
+  </script>
+   
+
+</body>
+
+</html>
