@@ -33,21 +33,21 @@
       <div class="class_parent">
         <span class="abc" style="color: rgb(93, 180, 242);">Akt</span>
         <div class="index">
-          <div class="index_3" id="pokeatk">0</div>
+          <div class="index_3" id="pokeatk"><span style="padding-left: 0.325rem;">0</span></div>
         </div>
       </div>
 
       <div class="class_parent">
         <span class="abc" style="color: rgb(248, 160, 79);">Def</span>
         <div class="index">
-          <div class="index_4" id="pokeDef">0</div>
+          <div class="index_4" id="pokeDef"><span style="padding-left: 0.325rem;">0</span></div>
         </div>
       </div>
 
       <div class="class_parent">
         <span class="abc" style="color: rgb(211, 124, 241); ">Spd</span>
         <div class="index">
-          <div class="index_5" id="pokeSpd">0</div>
+          <div class="index_5" id="pokeSpd"><span style="padding-left: 0.325rem;">0</span></div>
         </div>
       </div>
     </div>
@@ -91,11 +91,11 @@
           pokeImgE.src = data.sprites.other["official-artwork"].front_default;
           pokeHpE.innerHTML = '<span style="padding-left: 0.325rem;">' + data.stats[0].base_stat + "</span>";
           pokeHpE.style.width = (data.stats[0].base_stat / 255) * 100 + "%";
-          pokeatkE.innerText = data.stats[1].base_stat;
+          pokeatkE.innerHTML = '<span style="padding-left: 0.325rem;">' + data.stats[1].base_stat; + '</span>'
           pokeatkE.style.width = (data.stats[1].base_stat / 255) * 100 + "%"
-          pokeDefE.innerText = data.stats[2].base_stat;
+          pokeDefE.innerHTML = '<span style="padding-left: 0.325rem;">' + data.stats[2].base_stat; + '</span>'
           pokeDefE.style.width = (data.stats[2].base_stat / 255) * 100 + "%"
-          pokeSpdE.innerText = data.stats[5].base_stat;
+          pokeSpdE.innerHTML = '<span style="padding-left: 0.325rem;">' + data.stats[5].base_stat; + '</span>'
           pokeSpdE.style.width = (data.stats[5].base_stat / 255) * 100 + "%"
 
         })

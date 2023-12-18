@@ -108,19 +108,22 @@ body {
 }
 
 .index_3 {
-  padding-left: 0.5rem;
+  /* padding-left: 0.5rem; */
   height: 100%;
   background-color: #fecc00;
+  width: 0;
 }
 .index_4 {
-  padding-left: 0.5rem;
+  /* padding-left: 0.5rem; */
   height: 100%;
   background-color: burlywood;
+  width: 0;
 }
 .index_5 {
-  padding-left: 0.5rem;
+  /* padding-left: 0.5rem; */
   height: 100%;
   background-color: darkmagenta;
+  width: 0;
 }
 .abc {
   color: green;
