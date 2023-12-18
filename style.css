@@ -1,133 +1,151 @@
 @font-face {
-    font-family: Pokemonfont;
-    src: url("./Pokemon Hollow.ttf");
-  }
-  
-  body {
-    background-color: #303030;
-    display: flex;
-    flex-direction: column;
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-    justify-content: center;
-  }
-  
-  .title {
-    font-family: Pokemonfont;
-    text-align: center;
-    color: #fecc00;
-  }
-  
-  .search-parent {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    height: 1.75rem;
-  }
-  
-  .search-parent input {
-    outline: none;
-    padding: 0px;
-    padding-left: 0.5rem;
-    border-radius: 0.3rem 0 0 0.3rem;
-    font-weight: bold;
-    height: 100%;
-    border: none;
-    width: 12rem;
-  }
-  
-  .go_button {
-    height: 100%;
-    background: #38acff;
-    border: 0px;
-    cursor: pointer;
-    border-radius: 0 0.3rem 0.3rem 0;
-    color: white;
-    font-weight: bolder;
-    padding: 0rem 1rem;
-  }
-  
-  .go_button:hover {
-    text-decoration: underline;
-  }
-  
-  .card_container {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  
-  .card_parent {
-    width: 16rem;
-    background-color: white;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .card_parent img {
-    width: 11rem;
-    margin-top: 1rem;
-  }
-  
-  .search {
-    display: flex;
-    font-weight: bold;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-  }
-  
-  .label_parent {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-  }
-  .label {
-    padding: 0px;
-  }
-  
-  /* progress bar css */
-  .index {
-    background-color: rgb(209, 209, 209);;
-    width: 100%;
-    border-radius: 1.5rem;
-    margin-left: 0.5rem;
-    margin-bottom: 18px;
-    box-sizing: border-box;
-    width: 10rem; 
-  }
-  .index_2 {
-    /* padding-left: 0.5rem; */
-  }
-  
-  .abc {
-    color: green;
-  }
-  
-  .class_parent {
-    display: flex;
-    flex-direction: row;
-  }
-  
-  /* footer css */
-  
-  .footer{
-    font-size: 0.8rem;
-    font-weight: 400;
-    display: block;
-    margin: 0;
-    padding: 0;
-    cursor: pointer;
-    margin-top: 8rem;
-    display: flex;
-    justify-content: center;
-    
-  }
-  
-  .name{
-    text-decoration: none;
-    color: black;
-  }
+  font-family: Pokemonfont;
+  src: url("./Pokemon Hollow.ttf");
+}
+
+body {
+  background-color: #303030;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  justify-content: center;
+}
+
+.title {
+  font-family: Pokemonfont;
+  text-align: center;
+  color: #fecc00;
+}
+
+.search-parent {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  height: 1.75rem;
+}
+
+.search-parent input {
+  outline: none;
+  padding: 0px;
+  padding-left: 0.5rem;
+  border-radius: 0.3rem 0 0 0.3rem;
+  font-weight: bold;
+  height: 100%;
+  border: none;
+  width: 12rem;
+}
+
+.go_button {
+  height: 100%;
+  background: #38acff;
+  border: 0px;
+  cursor: pointer;
+  border-radius: 0 0.3rem 0.3rem 0;
+  color: white;
+  font-weight: bolder;
+  padding: 0rem 1rem;
+}
+
+.go_button:hover {
+  text-decoration: underline;
+}
+
+.card_container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.card_parent {
+  width: 16rem;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card_parent img {
+  width: 11rem;
+  margin-top: 1rem;
+}
+
+.search {
+  display: flex;
+  font-weight: bold;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.label_parent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.label {
+  padding: 0px;
+}
+
+/* progress bar css */
+.index {
+  background-color: rgb(209, 209, 209);
+  width: 100%;
+  overflow: hidden;
+  border-radius: 1.5rem;
+  margin-left: 0.5rem;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  width: 10rem;
+}
+.index_2 {
+  /* padding-left: 0.5rem; */
+  height: 100%;
+  background-color: cadetblue;
+  width: 0;
+}
+
+.index_3 {
+  padding-left: 0.5rem;
+  height: 100%;
+  background-color: #fecc00;
+}
+.index_4 {
+  padding-left: 0.5rem;
+  height: 100%;
+  background-color: burlywood;
+}
+.index_5 {
+  padding-left: 0.5rem;
+  height: 100%;
+  background-color: darkmagenta;
+}
+.abc {
+  color: green;
+}
+
+.class_parent {
+  display: flex;
+  flex-direction: row;
+}
+
+/* footer css */
+
+.footer {
+  font-size: 0.8rem;
+  font-weight: 400;
+  display: block;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+  margin-top: 8rem;
+  display: flex;
+  justify-content: center;
+}
+
+.name {
+  text-decoration: none;
+  color: black;
+}
