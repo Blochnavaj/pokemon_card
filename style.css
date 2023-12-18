@@ -146,9 +146,10 @@ body {
   margin-top: 8rem;
   display: flex;
   justify-content: center;
+  color: white;
 }
 
 .name {
   text-decoration: none;
-  color: black;
+  color: white;
 }
